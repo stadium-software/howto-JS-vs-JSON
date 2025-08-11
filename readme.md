@@ -1,4 +1,4 @@
-# How-To: Javascript vs JSON
+# How-To: Javascript vs JSON Arrays
 
 While syntactically similar, the key differences between JavaScript arrays and JSON arrays lie in their purpose, allowed content, and strictness of rules:
 

@@ -35,3 +35,23 @@ Follow a stricter syntax. Keys within JSON objects (which can be elements of a J
 ## In Essence
 
 A JSON array is a subset of what a JavaScript array can be. All valid JSON arrays are also valid JavaScript arrays, but not all JavaScript arrays are valid JSON arrays due to the restrictions on allowed content and stricter syntax rules in JSON. When transferring data, a JavaScript array must be serialized into a JSON-compatible format using JSON.stringify() before transmission, and then parsed back into a JavaScript array using JSON.parse() upon reception.
+
+## Stadium Lists
+
+To learn more about using `Lists` in Stadium, check out the [How-To: Lists](github.com/stadium-software/howto-lists) repo
+
+When working with Lists inside of Stadium, it often does not matter whether your List is in a JSON or a JS format. 
+
+However, when sending data to a WebService, `Lists` **must** be in JSON format. Converting a Javascript `List` to JSON can be accomplished by using the following in the `Code` property of a `Javascript` action: 
+
+```javascript
+JSList.stringify();
+```
+
+Conversely, if a webservice returns data as a `text/plain` type, rather than as type `application/json`, you will need to parse that string using the Javascritp below for it to become JSON:
+
+```javascript
+MyString.parse();
+```
+
+However, in this case, best practice would be to rather change the `text/plain` data type on the API to be `application/json`. 

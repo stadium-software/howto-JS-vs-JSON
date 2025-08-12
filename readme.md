@@ -38,8 +38,6 @@ A JSON array is a subset of what a JavaScript array can be. All valid JSON array
 
 ## Stadium Lists
 
-To learn more about using `Lists` in Stadium, check out the [How-To: Lists](https://github.com/stadium-software/howto-lists) repo
-
 When working with Lists inside of Stadium, it often does not matter whether your List is in a JSON or a JS format. 
 
 However, when sending data to a WebService, `Lists` **must** be in JSON format. Converting a Javascript `List` to JSON can be accomplished by using the following in the `Code` property of a `Javascript` action: 
@@ -55,3 +53,5 @@ MyString.parse();
 ```
 
 However, in this case, best practice would be to rather change the `text/plain` data type on the API to be `application/json`. 
+
+To learn more about using `Lists` in Stadium, check out the [How-To: Lists](https://github.com/stadium-software/howto-lists) repo

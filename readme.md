@@ -38,7 +38,7 @@ A JSON array is a subset of what a JavaScript array can be. All valid JSON array
 
 ## Stadium Lists
 
-To learn more about using `Lists` in Stadium, check out the [How-To: Lists](github.com/stadium-software/howto-lists) repo
+To learn more about using `Lists` in Stadium, check out the [How-To: Lists](https://github.com/stadium-software/howto-lists) repo
 
 When working with Lists inside of Stadium, it often does not matter whether your List is in a JSON or a JS format. 
 

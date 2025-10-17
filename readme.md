@@ -18,9 +18,71 @@ Primarily used for data interchange between systems. They are a textual format f
 
 Can store a wide range of data types, including primitive types (strings, numbers, booleans, null, undefined), objects, other arrays, functions, and more.
 
+Javascript Array Example:
+```javascript
+[
+    {
+      gender: "female",
+      subscribed: true,
+      name: {
+        first: "Jennie",
+        last: "Nichols"
+      },
+      {
+        city: "Billings",
+        country: "United States",
+        postcode: "63104",
+        coordinates: {
+          latitude: "-69.8246",
+          longitude: "134.8719"
+        }
+      },
+      dob: {
+        date: "1992-03-08T15:13:16.688Z",
+        age: 30
+      },
+      pets: [
+        {name: "fluffy", type:"dog"},
+        {name: "kitty", type:"cat"}
+      ]
+    }
+]
+```
+
 **JSON Arrays:**
 
 Have a more restricted set of allowed values. They can only contain strings, numbers, objects, arrays, booleans, or null. Functions and undefined are not permitted within a JSON array.
+
+JSON Array Example:
+```json
+[
+    {
+      "gender": "female",
+      "subscribed": true,
+      "name": {
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      {
+        "city": "Billings",
+        "country": "United States",
+        "postcode": "63104",
+        "coordinates": {
+          "latitude": "-69.8246",
+          "longitude": "134.8719"
+        }
+      },
+      "dob": {
+        "date": "1992-03-08T15:13:16.688Z",
+        "age": 30
+      },
+      "pets": [
+        {"name": "fluffy", "type":"dog"},
+        {"name": "kitty", "type":"cat"}
+      ]
+    }
+]
+```
 
 ## Strictness of Rules
 
